@@ -6,14 +6,17 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - web:/usr/local/tomcat/webapps
+      - "web:/usr/local/tomcat/webapps"
   
   jenkins:
     image: jenkins/jenkins:lts
+    user: root
     ports:
       - "8081:8080"
     volumes:
-      - web:/shared-dir
+      - "web:/shared-directory"
+      - "jenkins:/var/jenkins_home/"
 
 volumes:
+  jenkins:
   web:
