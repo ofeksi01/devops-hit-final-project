@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  tomcat:
+    image: tomcat:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - web:/usr/local/tomcat/webapps
+  
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8081:8080"
+    volumes:
+      - web:/shared-dir
+
+volumes:
+  web:
