@@ -63,7 +63,7 @@
     <div class="container-fluid">
         <div class="header" id='header'>
             <div class='header-title'>
-                <h1>SINAI</h1>
+                <h1>OFEK SINAI</h1>
                 <h2>restaurant</h2>
             </div>
             <p>COFFEE | TEA | CHOCOLATE | LOREM | IPSUM</p>
